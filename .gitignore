@@ -3,6 +3,7 @@
 *.mod.c
 *.cmd
 *.o
+*.o.d
 *.o.ur-safe
 .cache.mk
 Module.symvers
