@@ -95,14 +95,15 @@ extern void rtl871x_cedbg(const char *fmt, ...);
 	#define _seqdump(sel, fmt, arg...) _dbgdump(fmt, ##arg)
 #endif
 
+#ifndef _OS_INTFS_C_
+extern uint rtw_drv_log_level;
+#endif
+
+
 void RTW_BUF_DUMP_SEL(uint _loglevel, void *sel, u8 *_titlestring,
 								bool _idx_show, const u8 *_hexdata, int _hexdatalen);
 
 #ifdef CONFIG_RTW_DEBUG
-
-#ifndef _OS_INTFS_C_
-extern uint rtw_drv_log_level;
-#endif
 
 #if defined(_dbgdump)
 
