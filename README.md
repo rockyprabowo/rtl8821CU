@@ -32,7 +32,7 @@ To make use of the **DKMS** feature with this project, do the following:
 
 ```
 DRV_NAME=rtl8821CU
-DRV_VERSION=5.4.1
+DRV_VERSION=5.4.1_28754.r1
 sudo cp -r ~/build/${DRV_NAME} /usr/src/${DRV_NAME}-${DRV_VERSION}
 sudo dkms add -m ${DRV_NAME} -v ${DRV_VERSION}
 sudo dkms build -m ${DRV_NAME} -v ${DRV_VERSION}
@@ -43,7 +43,7 @@ If you later on want to remove it, do the following:
 
 ```
 DRV_NAME=rtl8821CU
-DRV_VERSION=5.4.1
+DRV_VERSION=5.4.1_28754.r1
 sudo dkms remove ${DRV_NAME}/${DRV_VERSION} --all
 ```
 
